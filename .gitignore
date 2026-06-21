@@ -1,0 +1,15 @@
+# Arquivos de compilação do Arduino
+build/
+bin/
+out/
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Arquivos temporários e backups
+*~
+*.bak
+*.tmp
+*.swp

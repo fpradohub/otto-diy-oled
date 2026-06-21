@@ -1,16 +1,17 @@
 /*
  * Sketch Exemplo do OTTO
  * Adaptado para Display Oled por Julian C Braga, Hitech Mecatrônica 21/08/2022
- * Adpatado para multiplos modos por Fernando Prado 16/09/2025
+ * Adaptado para multiplos modos por Fernando Prado 16/09/2025
 
 */
 
 /*
- * Você pode usar qualque Sketch do OTTO com o modelo Display OLED Nano  
+ * Você pode usar qualquer Sketch do OTTO com o modelo Display OLED Nano  
  * Basta incluir na comunicação serial os comandos para a animação dos olhos 
  * comandos aceitos -> "Normal","H  appy","SuperHappy","Sad","Victory","Angry","Sleeping",
  * "Fretful","Love","Confused","Fart","Wave","Magic","Fail"
  * Lembre-se de desconectar a comunicação serial RX/TX das placas antes de carregar o arduino
+ * Movimentos para frente e para traz considerando o eixo do motor do otto virado para parte frontal do robo.
 */
 
 #include <Otto9.h> //-- Otto Library version 9
