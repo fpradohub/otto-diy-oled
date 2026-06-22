@@ -1,9 +1,9 @@
 /*
  * Sketch Exemplo do OTTO
+ * Baseado no projeto original "Arduino_Otto_Robot" por Vishal Soni (github.com/vishalsoniindia)
  * Adaptado para Display Oled por Julian C Braga, Hitech Mecatrônica 21/08/2022
- * Adaptado para multiplos modos por Fernando Prado 16/09/2025
-
-*/
+ * Customizado e adaptado para múltiplos modos por Fernando Prado 16/09/2025
+ */
 
 /*
  * Você pode usar qualquer Sketch do OTTO com o modelo Display OLED Nano  

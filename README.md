@@ -140,6 +140,18 @@ Otto/
 
 ---
 
+## 🤝 Créditos e Referências
+
+Este projeto foi construído com base em trabalhos incríveis da comunidade de hardware livre. Agradecimentos especiais a:
+
+*   **[Otto DIY](https://www.ottodiy.com/)** (Camilo Parra Palacio): Pelo projeto original de hardware e bibliotecas do robô Otto.
+*   **[Vishal Soni](https://github.com/vishalsoniindia)**: Pelo repositório base [Arduino_Otto_Robot](https://github.com/vishalsoniindia/Arduino_Otto_Robot), instructables e tutoriais de robótica.
+*   **Julian C. Braga (HiTech Mecatrônica)**: Pela adaptação inicial do robô Otto para o uso com o display OLED Nano (SSD1306).
+*   **Fernando Prado**: Pelas novas implementações, inclusão do botão de seleção, máquina de estados para múltiplos modos de operação, novas melodias (Star Wars, Piratas do Caribe e Michael Jackson) e coreografias sincronizadas.
+
+---
+
 ## 📄 Licença
 
 Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para obter mais informações.
+
