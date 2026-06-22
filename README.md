@@ -97,18 +97,20 @@ As expressões oculares são controladas através de comandos enviados pela Comu
 
 ```
 Otto/
-├── Robo_Otto_Oled/
-│   └── Robo_Otto_Oled.ino            # Código principal do robô (customizado)
-├── Robo_Otto_Oled_Exemplo/
-│   └── Robo_Otto_Oled_Exemplo.ino    # Código base de exemplo
+├── Robo_Otto_Principal/
+│   └── Robo_Otto_Principal.ino       # Código da placa principal do robô (Arduino Nano)
+├── Robo_Otto_Olhos/
+│   ├── Robo_Otto_Olhos.ino           # Código do controlador do Display OLED (olhos)
+│   └── Animations.h                  # Definições de animações dos olhos
 ├── docs/
 │   ├── Montagem OTT0 OLED JCB.pdf    # Manual em PDF com passo a passo ilustrado
 │   ├── conexoes_robo.txt             # Mapeamento rápido de pinos
 │   └── video_montagem.txt            # Link do vídeo de referência no YouTube
 ├── Sketch Arduino/                   # Bibliotecas originais, diagramas e esquemáticos
 │   ├── Otto_Robot_Lib/               # Biblioteca oficial Otto9
-│   └── Otto_robot_circuit.png        # Esquema elétrico das ligações
-├── Otto.lbrn2                        # Arquivos de corte a laser (LightBurn)
+│   ├── Otto_robot_circuit.png        # Esquema elétrico das ligações
+│   └── Exemplo_Antigo_Referência/    # Código de exemplo antigo para referência
+├── Otto.lbrn2                        # Arquivo de corte a laser (LightBurn)
 ├── .gitignore                        # Regras para ignorar arquivos desnecessários no git
 ├── LICENSE                           # Licença MIT
 └── README.md                         # Este arquivo de documentação
@@ -120,10 +122,14 @@ Otto/
 
 1.  Baixe e instale a versão mais recente do [Arduino IDE](https://www.arduino.cc/en/software).
 2.  Copie a pasta `Otto_Robot_Lib` (localizada dentro de `Sketch Arduino/`) para a pasta de bibliotecas do seu Arduino (geralmente em `Documentos/Arduino/libraries/`).
-3.  Abra o arquivo `Robo_Otto_Oled/Robo_Otto_Oled.ino` no Arduino IDE.
-4.  Selecione a placa **Arduino Nano**, o processador correspondente (ex: ATmega328P ou ATmega328P Old Bootloader) e a porta COM correspondente.
-5.  Desconecte os pinos RX/TX.
-6.  Clique em **Carregar (Upload)**.
+3.  **Gravar Placa Principal:**
+    *   Abra o arquivo `Robo_Otto_Principal/Robo_Otto_Principal.ino` no Arduino IDE.
+    *   Selecione a placa **Arduino Nano**, o processador correspondente (ex: ATmega328P ou ATmega328P Old Bootloader) e a porta COM correspondente.
+    *   Desconecte os pinos RX/TX da placa antes de carregar o código para evitar conflitos na gravação.
+    *   Clique em **Carregar (Upload)**.
+4.  **Gravar Placa do Display (Olhos):**
+    *   Abra o arquivo `Robo_Otto_Olhos/Robo_Otto_Olhos.ino` no Arduino IDE.
+    *   Carregue o código na placa correspondente do display OLED seguindo o mesmo processo de upload.
 
 ---
 
